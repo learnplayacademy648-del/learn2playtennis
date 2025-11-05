@@ -4,39 +4,43 @@ import { Star, MessageCircle } from "lucide-react";
 
 const reviews = [
   {
-    name: "Sanchit Shorewala",
+    name: "Kushal Debnath",
     rating: 5,
-    text: `Mr. Pradeep is an excellent coach. He has a real passion for tennis, which translates to a real passion for coaching. His enthusiasm and attention to each player’s growth make learning truly enjoyable.`,
-    date: "7 months ago",
-  },
-  {
-    name: "Aarika Sharma",
-    rating: 5,
-    text: `I've been training under Coach Pradeep for months — his focus on technique, fitness, and match play has completely transformed my game. Every session is motivating and well structured.`,
-    date: "10 months ago",
-  },
-  {
-    name: "Jacques B",
-    rating: 5,
-    text: `Pradeep is an exceptional tennis coach — detailed, reliable, and always up-to-date with modern techniques. Perfect for both beginners and advanced players.`,
-    date: "a year ago",
+    text: `Pradeep has been very instrumental in my tennis journey. He is one of the top tennis coaches in Gurgaon, ATP certified. Tennis enthusiasts - whether beginner or have played before, can reach out to him. His tennis academy Learn2play tennis is located in sector 61.`,
+    date: "6 days ago",
   },
   {
     name: "Ruptika Vohra",
     rating: 5,
-    text: `Pradeep Sir’s attention to detail and one-on-one guidance helped me build proper technique. His sessions are disciplined yet fun — a great mix!`,
+    text: `Great coach Pradeep Sir, his personal attention, 1:1 classes really helps improve and learn correct techniques. The training sessions are also disciplined. Highly recommended for anyone passionate about tennis! 🎾 …`,
     date: "a week ago",
   },
+
   {
-    name: "Kushal Debnath",
+    name: "Aarika Sharma",
     rating: 5,
-    text: `One of the best coaches in Gurgaon! Extremely professional and supportive. Whether beginner or advanced, Coach Pradeep helps you reach your full potential.`,
-    date: "6 days ago",
+    text: `I had an incredible experience at phoenix tennis academy, The coach Mr. Pradeep js highly skilled and passionate about developing players of all levels. The academy offers personalized training programs that focus on both technique and strategy, helping players improve quickly. This has greatly helped me develop a more consistent and strong game. Whether you're a beginner or an advanced player, this academy provides the perfect blend of professional guidance and a fun, motivating atmosphere. Highly recommend it for anyone serious about improving their game!`,
+    date: "10 months ago",
+  },
+
+  {
+    name: "Jacques B",
+    rating: 5,
+    text: `Pradeep is an exceptional tennis coach, and I highly recommend his lessons. Over the course of 45 sessions, he has proven to be extraordinarily reliable, never missing a single session. His attention to detail is very good and his techniques are up to date with the latest styles in tennis. Whether you're a seasoned player or a beginner, Pradeep caters to all skill levels. For those seeking a top-notch coach from abroad, Pradeep is the perfect choice.`,
+    date: "a year ago",
+  },
+  {
+    name: "Sanchit Shorewala",
+    rating: 5,
+    text: `Mr. Pradeep is an excellent coach. He has a real passion for tennis, which translates to a real passion for coaching. This passion motivates the student to keep learning and improving under his watchful eye, and he keeps the player's growth in mind from both a short- and long-term perspective. Both my sister and I have learnt under him, and I can credit his enthusiasm, knowledge, and infectious energy for making tennis my new favourite sport.
+    
+    I highly recommend for anyone wanting to start with tennis, or even just looking for a coach or partner to play with.`,
+    date: "7 months ago",
   },
   {
     name: "Rajat Matta",
     rating: 5,
-    text: `We’ve been training with Pradeep sir for months, and the improvement in my daughter’s game is remarkable. His structured coaching and motivation make a real difference.`,
+    text: `We've been training with Pradeep sir for a while now, and we are very pleased with the clear improvement in my daughter's game. He has a fantastic eye for detail and has been exceptional at refining her forehand and backhand techniques. He quickly identifies areas for improvement and provides clear, step-by-step guidance to achieve it. While we have primarily focused on groundstrokes so far, his methodical approach and deep understanding of the game give us great confidence in his ability to teach all other aspects as well. Highly recommend for any player looking to move beyond the beginner level and build a strong technical foundation.`,
     date: "a day ago",
   },
 ];
