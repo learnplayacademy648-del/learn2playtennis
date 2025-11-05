@@ -65,9 +65,16 @@ function Navbar() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="ml-4 bg-gradient-to-r from-[#FFD84D] to-[#FFE788] text-[#1E293B] font-semibold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all border border-[#f5e48b]/40"
           >
-            Join Now
+            <Link
+              to="contact"
+              smooth
+              duration={600}
+              offset={-80}
+              className="ml-4 bg-gradient-to-r from-[#FFD84D] to-[#FFE788] text-[#1E293B] font-semibold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all border border-[#f5e48b]/40"
+            >
+              Join Now
+            </Link>
           </motion.button>
         </nav>
 

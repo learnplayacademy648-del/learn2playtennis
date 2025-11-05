@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Award, UserCheck, ShieldCheck } from "lucide-react";
-import headCoach from "../assets/about/coach.jpg"; // Ensure correct image path
+import headCoach from "../assets/about/coach.jpg"; // portrait image
 
 const founder = {
   name: "Mr. Pradeep Arya",
@@ -18,6 +18,8 @@ const founder = {
   His modern, technique-focused training methods emphasize precision, motion, and performance — 
   the foundation for any successful tennis player. Every trainee receives personalized attention 
   and structured development plans suited to their age, skill, and goals.`,
+  philosophy:
+    "A coach plays a major role not only in the development of the game but also in creating a good human being.",
 };
 
 const team = [
@@ -75,20 +77,19 @@ function CoachingTeam() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="relative bg-white rounded-3xl shadow-lg overflow-hidden mb-20 flex flex-col md:flex-row items-stretch"
+          className="bg-white rounded-3xl shadow-lg overflow-hidden mb-20 flex flex-col md:flex-row items-stretch"
         >
           {/* Image */}
-          <div className="md:w-1/2 h-[500px] sm:h-[450px] overflow-hidden relative">
+          <div className="md:w-1/2 w-full flex justify-center bg-black/5">
             <img
               src={founder.image}
               alt={founder.name}
-              className="object-cover w-full h-full md:rounded-l-3xl"
+              className="max-h-[600px] w-auto object-contain md:rounded-l-3xl transition-transform duration-700 hover:scale-[1.03]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent md:rounded-l-3xl" />
           </div>
 
           {/* Text Content */}
-          <div className="md:w-1/2 p-8 md:p-12 text-center md:text-left flex flex-col justify-center">
+          <div className="md:w-1/2 w-full p-8 md:p-12 text-center md:text-left flex flex-col justify-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
               {founder.name}
             </h3>
@@ -108,6 +109,17 @@ function CoachingTeam() {
             <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
               {founder.description}
             </p>
+
+            {/* Coach's Philosophy */}
+            <motion.blockquote
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="border-l-4 border-[#FFD84D] pl-4 italic text-gray-700 text-[15px] leading-relaxed mb-6"
+            >
+              “{founder.philosophy}”
+            </motion.blockquote>
 
             <motion.div
               animate={{ y: [0, -5, 0] }}
