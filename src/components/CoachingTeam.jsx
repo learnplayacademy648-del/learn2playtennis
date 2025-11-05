@@ -1,13 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  Award,
-  UserCheck,
-  ShieldCheck,
-  Dumbbell,
-  HeartHandshake,
-} from "lucide-react";
-import headCoach from "../assets/about/coach.jpg"; // Replace with actual image
+import { Award, UserCheck, ShieldCheck } from "lucide-react";
+import headCoach from "../assets/about/coach.jpg"; // Ensure correct image path
 
 const founder = {
   name: "Mr. Pradeep Arya",
@@ -27,17 +21,6 @@ const founder = {
 };
 
 const team = [
-  {
-    name: "Pradeep Kumar Arya",
-    role: "ATP Certified Tennis Coach",
-    details: [
-      "AITA Certified Coach",
-      "Member, British Tennis (LTA)",
-      "Certified Fitness Coach (AITA)",
-      "Certified in First Aid & CPR (Indian Red Cross Society)",
-      "Former Delhi University Women’s Team Coach",
-    ],
-  },
   {
     name: "Daulat Gusain",
     role: "Certified Tennis Coach",
@@ -92,21 +75,20 @@ function CoachingTeam() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="relative bg-white rounded-3xl shadow-lg overflow-hidden mb-20 flex flex-col md:flex-row items-center"
+          className="relative bg-white rounded-3xl shadow-lg overflow-hidden mb-20 flex flex-col md:flex-row items-stretch"
         >
           {/* Image */}
-          <div className="md:w-1/2 h-[420px] overflow-hidden relative">
+          <div className="md:w-1/2 h-[500px] sm:h-[450px] overflow-hidden relative">
             <img
               src={founder.image}
               alt={founder.name}
               className="object-cover w-full h-full md:rounded-l-3xl"
-              style={{ objectPosition: "center 30%" }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent md:rounded-l-3xl" />
           </div>
 
           {/* Text Content */}
-          <div className="md:w-1/2 p-10 md:p-12 text-center md:text-left">
+          <div className="md:w-1/2 p-8 md:p-12 text-center md:text-left flex flex-col justify-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
               {founder.name}
             </h3>
@@ -123,14 +105,14 @@ function CoachingTeam() {
               ))}
             </ul>
 
-            <p className="text-gray-600 text-[15px] leading-relaxed">
+            <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
               {founder.description}
             </p>
 
             <motion.div
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="inline-block mt-6 bg-gradient-to-r from-[#FFD84D] to-[#FFB84D] text-gray-900 px-5 py-2 rounded-full font-semibold shadow"
+              className="inline-block bg-gradient-to-r from-[#FFD84D] to-[#FFB84D] text-gray-900 px-5 py-2 rounded-full font-semibold shadow self-center md:self-start"
             >
               Founder & Head Coach
             </motion.div>

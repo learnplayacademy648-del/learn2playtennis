@@ -1,11 +1,12 @@
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import heroImage from "../assets/hero/hero-bg-2.jpg";
+
 function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center text-center overflow-hidden"
+      className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center text-center overflow-hidden"
     >
       {/* 🎾 Background image with gradient overlay */}
       <div
@@ -15,7 +16,7 @@ function Hero() {
         }}
       />
 
-      {/* Soft gradient overlay (adds luxury feel) */}
+      {/* Soft gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-[#0E7C6A]/70" />
 
       {/* ✨ Hero content */}
@@ -23,21 +24,26 @@ function Hero() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 px-6 max-w-3xl text-white"
+        className="relative z-10 px-4 sm:px-6 md:px-8 max-w-3xl text-white"
       >
         {/* Headline */}
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        <h1
+          className="
+            text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
+            font-extrabold leading-tight mb-6 break-words
+          "
+        >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD84D] via-white to-[#FF6B2C] drop-shadow-md">
             Learn Tennis
-          </span>{" "}
-          <br />
-          <span className="font-light text-white">
+          </span>
+          <br className="hidden sm:block" />
+          <span className="font-light text-white block mt-2 sm:mt-0">
             the Way It Is Taught Worldwide.
           </span>
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg md:text-xl text-gray-200 mb-10 font-light tracking-wide">
+        <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-10 font-light tracking-wide leading-relaxed">
           Where Passion Meets Performance
         </p>
 
@@ -48,45 +54,29 @@ function Hero() {
             smooth
             duration={600}
             offset={-80}
-            className="bg-[#0E7C6A] text-white px-8 py-3 rounded-full font-semibold cursor-pointer shadow-md hover:shadow-xl hover:bg-[#0c6759] hover:scale-105 transition-all duration-300"
+            className="bg-[#0E7C6A] text-white px-6 sm:px-8 py-3 rounded-full font-semibold cursor-pointer shadow-md hover:shadow-xl hover:bg-[#0c6759] hover:scale-105 transition-all duration-300"
           >
             Book Free Trial
           </Link>
-
-          {/* <Link
-            to="programs"
-            smooth
-            duration={600}
-            offset={-80}
-            className="bg-gradient-to-r from-[#FFD84D] to-[#FFB84D] text-black px-8 py-3 rounded-full font-semibold cursor-pointer shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
-          >
-            Join Now
-          </Link> */}
         </div>
 
         {/* Stats */}
-        <div className="mt-16 flex justify-center gap-8 text-sm text-gray-200">
+        <div className="mt-12 sm:mt-16 flex justify-center gap-6 sm:gap-8 text-sm text-gray-200">
           <div className="group">
-            <div className="text-3xl font-bold text-[#FFD84D] group-hover:scale-110 transition">
-              12+
+            <div className="text-2xl sm:text-3xl font-bold text-[#FFD84D] group-hover:scale-110 transition">
+              18+
             </div>
-            <div className="uppercase tracking-wide text-xs">
+            <div className="uppercase tracking-wide text-[10px] sm:text-xs">
               Years Coaching
             </div>
           </div>
           <div className="group">
-            <div className="text-3xl font-bold text-[#FFD84D] group-hover:scale-110 transition">
+            <div className="text-2xl sm:text-3xl font-bold text-[#FFD84D] group-hover:scale-110 transition">
               500+
             </div>
-            <div className="uppercase tracking-wide text-xs">
+            <div className="uppercase tracking-wide text-[10px] sm:text-xs">
               Players Trained
             </div>
-          </div>
-          <div className="group">
-            <div className="text-3xl font-bold text-[#FFD84D] group-hover:scale-110 transition">
-              5
-            </div>
-            <div className="uppercase tracking-wide text-xs">Programs</div>
           </div>
         </div>
 
@@ -94,7 +84,7 @@ function Hero() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="mt-16 text-gray-300 text-sm tracking-wide"
+          className="mt-12 sm:mt-16 text-gray-300 text-xs sm:text-sm tracking-wide"
         >
           ↓ Scroll to explore
         </motion.div>

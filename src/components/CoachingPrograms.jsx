@@ -5,17 +5,17 @@ import { Link } from "react-scroll";
 const programs = [
   {
     title: "Mini Tennis",
-    age: "Ages 4–6",
+    age: "For Ages 4 and Above",
     description:
-      "Play-based learning on smaller courts focusing on balance, movement, and coordination. Perfect for your child’s first step into tennis!",
+      "Fun, play-based sessions on smaller courts — building balance, coordination, and early motor skills. A perfect first step into tennis for little champions!",
     emoji: "👧",
     color: "from-[#FFD84D] to-[#FFB84D]",
   },
   {
     title: "Kids Tennis Batch",
-    age: "Ages 7–12",
+    age: "For Ages 7 and Above",
     description:
-      "Progressive skill development with correct technique, footwork, and match play basics — building confidence and teamwork.",
+      "Progressive skill development with proper technique, footwork, and match basics — helping kids build confidence, discipline, and a love for the game.",
     emoji: "🧒",
     color: "from-[#0E7C6A] to-[#139E86]",
   },
@@ -23,7 +23,7 @@ const programs = [
     title: "Recreational Adults",
     age: "All Levels",
     description:
-      "Learn consistency, control, and game strategy in a fun, energetic environment. Perfect for fitness and social play.",
+      "Learn consistency, control, and match play strategies in a friendly, energetic environment. Ideal for fitness, fun, and social tennis enthusiasts.",
     emoji: "👨‍🦱",
     color: "from-[#FF6B2C] to-[#FFD84D]",
   },
@@ -31,15 +31,15 @@ const programs = [
     title: "Private 1-on-1 Sessions",
     age: "All Ages",
     description:
-      "Personalized coaching tailored to your goals. Accelerate progress with dedicated attention and detailed feedback.",
+      "Accelerate your improvement with personalized attention, tailored drills, and detailed performance feedback from our certified coaches.",
     emoji: "🎯",
     color: "from-[#0E7C6A] to-[#139E86]",
   },
   {
     title: "High Performance Elite",
-    age: "Tournament Level",
+    age: "Tournament Players",
     description:
-      "Advanced training with tactical drills, match analysis, and fitness conditioning — designed for serious competitors.",
+      "Intensive program designed for competitive players — focusing on tactical training, match strategy, strength, and mental conditioning.",
     emoji: "🏅",
     color: "from-[#FF6B2C] to-[#FFD84D]",
   },
@@ -65,8 +65,9 @@ function CoachingPrograms() {
             Our <span className="text-[#0E7C6A]">Coaching Programs</span>
           </h2>
           <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
-            From playful beginnings to professional pathways — find the perfect
-            program for your skill level and goals.
+            Whether you're a beginner, a rising junior, or a competitive player
+            — we offer world-class programs tailored to your age, level, and
+            goals.
           </p>
         </motion.div>
 
@@ -91,15 +92,19 @@ function CoachingPrograms() {
                 >
                   {program.emoji}
                 </motion.div>
+
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {program.title}
                 </h3>
+
                 <p className="text-sm font-medium text-[#0E7C6A] mb-3">
                   {program.age}
                 </p>
+
                 <p className="text-gray-600 mb-6 leading-relaxed text-[15px]">
                   {program.description}
                 </p>
+
                 <Link
                   to="contact"
                   smooth
