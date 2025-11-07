@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-screen flex items-center justify-center text-center overflow-hidden pt-20 sm:pt-24"
+      className="relative min-h-screen  flex items-center justify-center text-center pt-24 sm:pt-28"
     >
       {/* 🎾 Background image */}
       <div

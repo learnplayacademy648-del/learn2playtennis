@@ -80,11 +80,24 @@ function CoachingTeam() {
           className="bg-white rounded-3xl shadow-lg overflow-hidden mb-20 flex flex-col md:flex-row items-stretch"
         >
           {/* Image */}
+          {/* Image */}
           <div className="md:w-1/2 w-full flex justify-center bg-black/5 overflow-hidden">
             <img
               src={founder.image}
               alt={founder.name}
-              className="max-h-[700px] w-full object-cover object-[center_20%] md:rounded-l-3xl transition-transform duration-700 hover:scale-[1.03]"
+              className="
+      w-full 
+      h-full 
+      max-h-[700px] 
+      object-cover 
+      object-[center_35%]  /* Crop from bottom on mobile */
+      sm:object-[center_25%]  /* Slightly less crop on small tablets */
+      md:object-[center_20%]  /* Subtle crop on desktop */
+      md:rounded-l-3xl 
+      transition-transform 
+      duration-700 
+      hover:scale-[1.03]
+    "
             />
           </div>
 
