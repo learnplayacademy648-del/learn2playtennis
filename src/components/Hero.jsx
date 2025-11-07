@@ -6,39 +6,42 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[90vh] md:min-h-screen flex items-center justify-center text-center overflow-hidden"
+      className="relative h-screen flex items-center justify-center text-center overflow-hidden pt-20 sm:pt-24"
     >
-      {/* 🎾 Background image with gradient overlay */}
+      {/* 🎾 Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center blur-sm scale-105"
+        className="absolute inset-0 bg-cover bg-center scale-105 blur-sm"
         style={{
           backgroundImage: `url(${heroImage})`,
         }}
       />
 
-      {/* Soft gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-[#0E7C6A]/70" />
+      {/* 🟢 Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-[#0E7C6A]/70" />
 
-      {/* ✨ Hero content */}
+      {/* ✨ Centered content */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 px-4 sm:px-6 md:px-8 max-w-3xl text-white"
+        className="
+          relative z-10 flex flex-col items-center justify-center
+          w-full max-w-3xl mx-auto px-6 sm:px-8 text-white text-center
+        "
       >
         {/* Headline */}
         <h1
           className="
-            text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
+            text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
             font-extrabold leading-tight mb-6 break-words
           "
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD84D] via-white to-[#FF6B2C] drop-shadow-md">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFD84D] via-white to-[#FF6B2C] drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
             Learn Tennis
           </span>
           <br className="hidden sm:block" />
           <span className="font-light text-white block mt-2 sm:mt-0">
-            the Way It Is Taught Worldwide.
+            The Way It Is Taught Worldwide.
           </span>
         </h1>
 

@@ -101,16 +101,6 @@ function Contact() {
                 </p>
               </div>
             </div>
-
-            <div className="flex items-start gap-4">
-              <Calendar className="w-6 h-6 text-[#0E7C6A]" />
-              <div>
-                <h4 className="text-lg font-semibold text-gray-900">
-                  UPI for Payments
-                </h4>
-                <p className="text-gray-600 text-sm">arya.pdp@oksbi</p>
-              </div>
-            </div>
           </motion.div>
 
           {/* Right Column - CTA */}
